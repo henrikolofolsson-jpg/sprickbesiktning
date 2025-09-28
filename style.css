@@ -1,0 +1,84 @@
+/* Systemfont-stack för max prestanda */
+:root{
+  --text:#0f172a; --muted:#5b657a; --brand:#0ea5e9; --brand2:#22c55e;
+  --bg:#f6f8fb; --surface:#ffffff; --line:#e9edf3;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{font-family: ui-sans-serif, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+     color:var(--text); background:#fff}
+
+/* Containers */
+.container{max-width:1200px;margin-inline:auto;padding-inline:20px}
+.container.narrow{max-width:900px}
+
+/* Header */
+.top{position:sticky;top:0;z-index:40;background:#ffffffcc;backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;min-height:64px}
+.brand img{display:block}
+.menu{display:flex;gap:18px;align-items:center}
+.menu a{color:var(--text);text-decoration:none;font-weight:600}
+.menu .cta{background:var(--brand);color:#fff;padding:10px 14px;border-radius:8px}
+.menu .cta:hover{filter:brightness(0.95)}
+@media (max-width:820px){.menu a:not(.cta){display:none}}
+
+/* Hero full-bleed */
+.fullbleed{position:relative;isolation:isolate}
+.fullbleed picture, .fullbleed img{display:block;width:100%;height:auto}
+.hero__overlay{
+  position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.35),rgba(0,0,0,.45));
+  display:flex;align-items:center
+}
+.hero__content{color:#fff;padding-block:min(12vh,120px)}
+.eyebrow{letter-spacing:.12em;text-transform:uppercase;opacity:.9;margin:0 0 8px}
+h1{font-size:clamp(28px,5vw,52px);line-height:1.05;margin:0 0 8px}
+.lede{font-size:clamp(16px,2vw,20px);opacity:.95;max-width:70ch}
+
+/* Buttons */
+.actions{display:flex;gap:12px;margin-top:14px;flex-wrap:wrap}
+.btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:10px;padding:12px 16px;border:1px solid transparent}
+.btn.primary{background:var(--brand2);color:#06220f}
+.btn.ghost{background:transparent;color:#fff;border-color:#ffffff80}
+.btn:hover{filter:brightness(0.97)}
+
+/* Sections */
+.section{padding-block:56px;background:#fff}
+.section.alt{background:var(--bg)}
+.section h2{font-size:clamp(22px,3.2vw,36px);margin:0 0 16px}
+
+/* Cards grid */
+.grid{display:grid;gap:20px}
+.cards{grid-template-columns:repeat(12,1fr)}
+.cards .card{grid-column:span 12;background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,.06)}
+.cards .card img{width:100%;height:auto;display:block;aspect-ratio:4/3;object-fit:cover}
+.cards .card h3{font-size:20px;margin:12px 12px 4px}
+.cards .card p{color:var(--muted);margin:0 12px 14px}
+@container (inline-size > 700px){ .cards .card{grid-column:span 6} }
+@media (min-width:900px){ .cards .card{grid-column:span 3} }
+
+/* Bullets & steps */
+.bullets{display:grid;gap:10px;padding:0;margin:0;list-style:none}
+.bullets li{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px}
+.steps{max-width:60ch;padding-left:18px;line-height:1.6}
+
+/* Logos */
+.logos{display:flex;flex-wrap:wrap;gap:28px;align-items:center}
+
+/* Kontakt */
+.contact{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.contact .btn{font-size:18px}
+
+/* Fullbleed dekorbild */
+.spacer img{width:100%;height:auto;display:block}
+
+/* Footer */
+.footer{border-top:1px solid var(--line);padding-block:18px;background:#fff}
+.footer .small{color:var(--muted);font-size:14px}
+
+/* Perf: rendera sektioner först när de syns */
+.section, .cards .card, .logos img{content-visibility:auto;contain-intrinsic-size: 600px 600px}
+
+/* Sticky call på mobil */
+.sticky-call{position:fixed;left:16px;right:16px;bottom:16px;display:none;z-index:60}
+.sticky-call a{display:block;text-align:center;background:#22c55e;color:#06220f;text-decoration:none;padding:14px;border-radius:14px;font-weight:900;box-shadow:0 8px 24px rgba(0,0,0,.15)}
+@media (max-width:820px){.sticky-call{display:block}}
