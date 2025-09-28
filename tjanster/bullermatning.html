@@ -5,41 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Bullermätning – ProTech Consult AB</title>
   <meta name="description" content="Kontinuerlig bullermätning med riktvärdeskontroll, notiser och tydliga rapporter – enligt Svensk Standard.">
-  <meta name="robots" content="index,follow" />
-
-  <!-- Favicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16x16.png">
-  <link rel="manifest" href="../assets/site.webmanifest">
-  <meta name="theme-color" content="#0b1020">
-
-  <!-- Social media preview -->
-  <meta property="og:title" content="Bullermätning – ProTech Consult AB">
-  <meta property="og:description" content="Bullermätning med riktvärdeskontroll, notiser och tydliga rapporter enligt Svensk Standard.">
-  <meta property="og:image" content="../assets/bild2.jpg">
-  <meta property="og:type" content="website">
-
   <link rel="stylesheet" href="../style.css" />
-  <script>
-    function toggleNav() {
-      document.querySelector('.nav').classList.toggle('open');
-    }
-  </script>
+  <script>function toggleNav(){document.querySelector('.nav').classList.toggle('open')}</script>
 </head>
-
 <body>
 <header class="site-header">
   <div class="container header-inner">
-    <a class="brand" href="../">
-      <span>ProTech Consult AB</span><br>
-      <small>Vibrationskontroll & omgivningspåverkan</small>
-    </a>
+    <a class="brand" href="../">ProTech Consult AB<small>Vibrationskontroll & omgivningspåverkan</small></a>
     <button class="nav-toggle" aria-label="Meny" onclick="toggleNav()"></button>
     <nav class="nav" aria-label="Primär">
       <a href="../">Start</a>
       <a href="riskanalys.html">Riskanalys</a>
-      <a href="bullermatning.html" class="active">Bullermätning</a>
+      <a href="bullermatning.html" class="active">Bullermatning</a>
       <a href="vibrationsmatning.html">Vibrationsmätning</a>
       <a href="sprickbesiktning.html">Sprickbesiktning</a>
       <a href="../#kontakt" class="btn btn-primary">Kontakta oss</a>
@@ -47,53 +24,39 @@
   </div>
 </header>
 
-<!-- Hero -->
-<section class="hero" style="background-image:linear-gradient(rgba(11,16,32,.6),rgba(11,16,32,.8)), url('../assets/bild2.jpg');">
-  <div class="hero-inner">
+<section class="page-hero" style="--hero:url('../assets/bild2.jpg')">
+  <div class="hero-inner container">
     <h1 class="h1">Bullermätning</h1>
-    <p class="lead">Kontinuerlig bullermätning med larm och rapporter – för bygg- och anläggningsprojekt i hela Sverige.</p>
+    <p class="lead">Kontinuerlig mätning, riktvärdeskontroll och delbara rapporter.</p>
   </div>
 </section>
 
-<!-- Main content -->
-<main class="container">
-  <article class="service-content">
-    <h2 class="h2">Vi hjälper dig med bullermätning</h2>
-    <p>ProTech Consult AB utför kontinuerlig bullermätning vid bygg- och anläggningsarbeten för att säkerställa att riktvärden enligt Svensk Standard följs. Vi erbjuder snabba installationer, SMS- och e-postlarm vid överskridna gränser samt tydliga rapporter för daglig och veckovis uppföljning.</p>
+<section class="content">
+  <div class="container">
+    <article class="prose">
+      <h2>Vi levererar</h2>
+      <ul class="check">
+        <li>Kontinuerliga mätningar (klass 1-instrument)</li>
+        <li>Notiser/SMS vid överträdelse</li>
+        <li>Vecko-/dagsrapporter per mätpunkt</li>
+        <li>Utförande enligt Svensk Standard</li>
+      </ul>
 
-    <h3 class="h3">Fördelar med vår tjänst:</h3>
-    <ul class="check">
-      <li>✔ Kontinuerlig mätning med uppkopplade instrument</li>
-      <li>✔ Automatiska SMS/e-postlarm vid överskridna gränsvärden</li>
-      <li>✔ Tydliga dagliga och veckovisa rapporter</li>
-      <li>✔ Mätning enligt Svensk Standard och lokala riktvärden</li>
-    </ul>
+      <h2>Tryggare projekt</h2>
+      <p>Faktabaserat underlag för åtgärder och kommunikation med beställare och närboende.</p>
 
-    <div class="cta">
-      <a href="../#kontakt" class="btn btn-primary">Begär offert</a>
-      <a href="../" class="btn btn-ghost">Tillbaka till startsidan</a>
-    </div>
-  </article>
-</main>
-
-<!-- Kontaktkort -->
-<section id="kontakt" class="section alt">
-  <div class="container contact-inner">
-    <div class="contact-card">
-      <img src="../assets/profil.jpg" alt="Henrik Olof Olsson" class="contact-photo">
-      <div>
-        <h3>Kontakta oss</h3>
-        <p><strong>Henrik Olof Olsson</strong><br>ProTech Consult AB</p>
-        <p>E-post: <a href="mailto:henrik.olof.olsson@protechconsult.se">henrik.olof.olsson@protechconsult.se</a><br>
-           Tel: <a href="tel:0708855579">070-885 55 79</a></p>
+      <div class="cta">
+        <a class="btn btn-primary" href="../#kontakt">Begär offert</a>
+        <a class="btn btn-ghost" href="../">Till startsidan</a>
       </div>
-    </div>
+    </article>
   </div>
 </section>
 
 <footer class="site-footer">
   <div class="container footer-inner">
-    &copy; 2025 ProTech Consult AB – Bullermätning, vibrationsmätning, sprickbesiktning & riskanalys
+    <img class="footer-logo" src="../assets/logo.png" alt="ProTech Consult AB">
+    <div>© 2025 ProTech Consult AB</div>
   </div>
 </footer>
 </body>
