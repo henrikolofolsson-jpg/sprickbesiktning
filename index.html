@@ -1,67 +1,256 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ProTech Consult AB - Sprickbesiktning</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>ProTech Consult AB – Sprickbesiktning, Vibrationsmätning, Buller & Riskanalys</title>
+  <meta name="description" content="ProTech Consult AB levererar sprickbesiktning (syneförrättning), vibrationsmätning (vertikal & triax), bullermätning och riskanalys. Snabba leveranser, sms-larm och tydliga rapporter. Verksamma i hela Sverige." />
+  <link rel="canonical" href="https://henrikolofolsson-jpg.github.io/sprickbesiktning/" />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="ProTech Consult AB – Sprickbesiktning, Vibrationsmätning, Buller & Riskanalys" />
+  <meta property="og:description" content="Partner för riskanalys, sprickbesiktning, vibrations- och bullermätning. Snabba svar, sms-larm, pris per mätare och dygn." />
+  <meta property="og:image" content="assets/bild10.jpg" />
+  <meta property="og:type" content="website" />
+
+  <!-- Preload största bilder -->
+  <link rel="preload" as="image" href="assets/bild10.jpg" />
+  <link rel="preload" as="image" href="assets/bild9.png" />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <img src="assets/bild9.png" alt="ProTech Logotyp" class="logo">
-    <nav>
-      <a href="#start">Start</a>
-      <a href="#tjanster">Tjänster</a>
-      <a href="#galleri">Galleri</a>
-      <a href="#kontakt">Kontakta oss</a>
-    </nav>
+  <!-- Topbar / Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#start" class="brand">
+        <img src="assets/bild9.png" alt="ProTech Consult AB logotyp" class="logo" />
+        <span class="brand-text">ProTech Consult AB</span>
+      </a>
+      <nav class="nav">
+        <a href="#tjanster">Tjänster</a>
+        <a href="#sa-funkar-det">Process</a>
+        <a href="#referenser">Varför välja oss</a>
+        <a href="#faq">FAQ</a>
+        <a href="#kontakt" class="btn btn-primary">Kontakta oss</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Meny"></button>
+    </div>
   </header>
 
-  <!-- START -->
-  <section id="start" class="hero" style="background-image: url('assets/bild10.jpg');">
-    <div class="hero-text">
-      <h1>Sprickbesiktning & Vibrationskontroll</h1>
-      <p>ProTech Consult AB – Professionella besiktningar för säkra byggprojekt</p>
+  <!-- HERO -->
+  <section id="start" class="hero" style="--hero:url('assets/bild10.jpg')">
+    <div class="container hero-inner">
+      <h1 class="h1">Partner för <span>sprickbesiktning</span>, <span>vibrationsmätning</span>, <span>buller</span> & <span>riskanalys</span></h1>
+      <p class="lead">
+        Smarta mätningar med vertikal &amp; triax, trådbundet eller IoT. Larm via sms/mail och tydliga rapporter enligt svensk standard.
+      </p>
+      <div class="hero-cta">
+        <a href="#kontakt" class="btn btn-primary">Be om offert</a>
+        <a href="#tjanster" class="btn btn-ghost">Se tjänster</a>
+      </div>
+      <ul class="badges">
+        <li>Snabba leveranser</li>
+        <li>Pris per mätare &amp; dygn</li>
+        <li>Nationell täckning</li>
+      </ul>
     </div>
   </section>
 
   <!-- TJÄNSTER -->
-  <section id="tjanster">
-    <h2>Våra tjänster</h2>
-    <p>Vi erbjuder sprickbesiktning, vibrations- och bullermätningar med modern utrustning.</p>
+  <section id="tjanster" class="section">
+    <div class="container">
+      <h2 class="h2">Våra tjänster</h2>
+      <p class="section-intro">Vi hjälper entreprenörer, konsulter och beställare genom hela kedjan – från riskanalys till slutrapport.</p>
+
+      <div class="cards">
+        <!-- Sprickbesiktning -->
+        <article class="card">
+          <img src="assets/bild2.jpg" alt="Syneförrättning / sprickbesiktning utförd i fält" loading="lazy" />
+          <div class="card-body">
+            <h3 class="h3">Sprickbesiktning (Syneförrättning)</h3>
+            <p>Dokumentation av befintliga sprickor före byggstart och uppföljning efteråt – utfört av utbildade besiktningspersoner, vid behov tillsammans med sotare. Rapport enligt svensk standard.</p>
+            <ul class="list">
+              <li>Före- och efterbesiktning med bildunderlag</li>
+              <li>Snabb rapportleverans i PDF</li>
+              <li>Spårbar historik för varje objekt</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Vibrationsmätning -->
+        <article class="card">
+          <img src="assets/bild1.jpg" alt="Vibrationsmätning vid sprängning och markarbete" loading="lazy" />
+          <div class="card-body">
+            <h3 class="h3">Vibrationsmätning</h3>
+            <p>Kontinuerlig mätning vid sprängning, packning och pålning. Vertikal &amp; triax, trådbunden eller uppkopplad. Larm i realtid via sms och e-post.</p>
+            <ul class="list">
+              <li>Pris per mätare och dygn</li>
+              <li>SMS-/mail-larm vid gränsvärden</li>
+              <li>Webbportal &amp; tydliga rapporter</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Bullermätning -->
+        <article class="card">
+          <img src="assets/bild7.jpg" alt="Buller- och ljudmätning inomhus/utomhus" loading="lazy" />
+          <div class="card-body">
+            <h3 class="h3">Bullermätning</h3>
+            <p>Mätningar och utredningar enligt gällande riktvärden. Vecko-/dagsnivåer och händelsebaserade toppar med enkla beslutsunderlag.</p>
+            <ul class="list">
+              <li>Grund- och uppföljningsmätningar</li>
+              <li>Tydliga grafer &amp; slutsatser</li>
+              <li>Rekommendationer för åtgärd</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Riskanalys -->
+        <article class="card">
+          <img src="assets/bild3.jpg" alt="Riskanalys inför bygg- och anläggningsarbete" loading="lazy" />
+          <div class="card-body">
+            <h3 class="h3">Riskanalys</h3>
+            <p>Ingenjörsledd riskanalys innan produktion. Vi identifierar riskobjekt, dimensionerar mätupplägg och sätter relevanta gränsvärden.</p>
+            <ul class="list">
+              <li>Objekt- och omgivningsanalys</li>
+              <li>Förslag på mätpunkter &amp; larmnivåer</li>
+              <li>Underlag till beställare och tillsyn</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+
+      <!-- Prisrad -->
+      <div class="pricing">
+        <div class="pricing-note">
+          <strong>Prismodell:</strong> Pris per mätare och dygn. Kontakta oss för offert – vi svarar snabbt.
+        </div>
+        <a href="#kontakt" class="btn btn-primary">Få pris idag</a>
+      </div>
+    </div>
   </section>
 
-  <!-- GALLERI -->
-  <section id="galleri">
-    <h2>Galleri</h2>
-    <div class="gallery">
-      <img src="assets/bild1.jpg" alt="Arbete på berg">
-      <img src="assets/bild2.jpg" alt="Diskussion i fält">
-      <img src="assets/bild3.jpg" alt="Mätutrustning monterad">
-      <img src="assets/bild5.jpg" alt="Mätning vid vägg">
-      <img src="assets/bild6.jpg" alt="Besiktningsarbete">
-      <img src="assets/bild7.jpg" alt="Utrustning">
+  <!-- PROCESS -->
+  <section id="sa-funkar-det" class="section alt">
+    <div class="container">
+      <h2 class="h2">Så jobbar vi</h2>
+      <ol class="steps">
+        <li><strong>1. Riskanalys.</strong> Ingenjörsgenomgång av metod, omgivning och gränsvärden.</li>
+        <li><strong>2. Etablering.</strong> Mätare monteras (vertikal &amp; triax); funktion och larm testas.</li>
+        <li><strong>3. Övervakning.</strong> Löpande uppföljning; sms/mail-larm vid överträdelse.</li>
+        <li><strong>4. Rapport.</strong> Tydlig PDF med slutsatser, diagram och rekommendationer.</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- WHY / TRUST -->
+  <section id="referenser" class="section">
+    <div class="container">
+      <h2 class="h2">Varför välja ProTech</h2>
+      <div class="trust">
+        <div class="trust-item">
+          <img src="assets/bild5.jpg" alt="Etablering av mätpunkt" loading="lazy" />
+          <h3>Snabbt &amp; tydligt</h3>
+          <p>Vi prioriterar snabb etablering, enkla rapporter och rak kommunikation – så att du kan bygga vidare utan onödiga stopp.</p>
+        </div>
+        <div class="trust-item">
+          <img src="assets/bild6.jpg" alt="Besiktningsarbete på plats" loading="lazy" />
+          <h3>Standard &amp; kvalitet</h3>
+          <p>Arbetet utförs enligt svensk standard och praxis. Spårbar dokumentation från start till mål.</p>
+        </div>
+        <div class="trust-item">
+          <img src="assets/bild1.jpg" alt="Team i produktion" loading="lazy" />
+          <h3>Nationell räckvidd</h3>
+          <p>Vi tar uppdrag i hela Sverige och är vana vid stora som små projekt i stad och landsbygd.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section alt">
+    <div class="container">
+      <h2 class="h2">Vanliga frågor</h2>
+      <div class="faq">
+        <details>
+          <summary>Vilken mätning behöver jag?</summary>
+          <p>Vid sprängning/pålning rekommenderar vi vibrationsmätning (vertikal & triax). Vid störningar eller myndighetskrav kompletterar vi med bullermätning. Inför större projekt startar vi alltid med riskanalys.</p>
+        </details>
+        <details>
+          <summary>Hur snabbt kan ni vara på plats?</summary>
+          <p>Ofta inom 24–48 timmar. Kontakta oss så prioriterar vi etablering enligt projektets tidplan.</p>
+        </details>
+        <details>
+          <summary>Hur funkar larm och rapporter?</summary>
+          <p>Gränsvärden bestäms i riskanalysen. Vid uppmätta nivåer skickas sms/mail. Rapporter levereras som PDF med tydliga slutsatser och rekommendationer.</p>
+        </details>
+        <details>
+          <summary>Vad kostar det?</summary>
+          <p>Vi arbetar med pris per mätare och dygn. Skicka plats, antal mätare och tidsperiod – så återkommer vi med offert direkt.</p>
+        </details>
+      </div>
     </div>
   </section>
 
   <!-- KONTAKT -->
-  <section id="kontakt">
-    <h2>Kontakta oss</h2>
-    <div class="contact">
-      <img src="assets/bild8.jpeg" alt="Kontaktperson" class="profile">
-      <p>Henrik Olof Olsson<br>
-      VD, ProTech Consult AB<br>
-      E-post: <a href="mailto:henrik.olof.olsson@protechconsult.se">henrik.olof.olsson@protechconsult.se</a><br>
-      Tel: 070-885 55 79
-      </p>
+  <section id="kontakt" class="section contact">
+    <div class="container contact-inner">
+      <div class="contact-card">
+        <img src="assets/bild8.jpeg" alt="Henrik Olof Olsson" class="contact-photo" loading="lazy" />
+        <div>
+          <h2 class="h2">Kontakta oss</h2>
+          <p><strong>Henrik Olof Olsson</strong><br/>ProTech Consult AB</p>
+          <p>E-post: <a href="mailto:henrik.olof.olsson@protechconsult.se">henrik.olof.olsson@protechconsult.se</a><br/>
+             Tel: <a href="tel:+46708855579">070-885 55 79</a></p>
+          <a href="mailto:henrik.olof.olsson@protechconsult.se" class="btn btn-primary">Skicka förfrågan</a>
+        </div>
+      </div>
     </div>
   </section>
 
-  <footer>
-    <p>© 2025 ProTech Consult AB</p>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="y"></span> ProTech Consult AB – Sprickbesiktning, vibrationsmätning, buller & riskanalys</p>
+    </div>
   </footer>
 
+  <!-- JSON-LD: Organization + Services -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "ProTech Consult AB",
+    "url": "https://henrikolofolsson-jpg.github.io/sprickbesiktning/",
+    "logo": "https://henrikolofolsson-jpg.github.io/sprickbesiktning/assets/bild9.png",
+    "email": "henrik.olof.olsson@protechconsult.se",
+    "telephone": "+46708855579",
+    "sameAs": []
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Sprickbesiktning, Vibrationsmätning, Bullermätning och Riskanalys",
+    "provider": {
+      "@type": "Organization",
+      "name": "ProTech Consult AB"
+    },
+    "areaServed": "SE",
+    "description": "Riskanalys, sprickbesiktning (syneförrättning), vibrations- och bullermätning med sms-larm och tydliga rapporter."
+  }
+  </script>
+
+  <script>
+    // mobilt menyknapp + årtal i footer
+    document.querySelector('.nav-toggle').addEventListener('click', () => {
+      document.querySelector('.nav').classList.toggle('open');
+    });
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
