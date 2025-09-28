@@ -1,176 +1,85 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Protech Consult – Sprickbesiktning, Vibrations- & Bullermätning</title>
-  <meta name="description" content="Protech Consult utför sprickbesiktning (syneförrättning), vibrationsmätning och bullermätning – snabbt, enligt svensk standard. Ring 070-88 555 79." />
-  <link rel="canonical" href="https://protechconsult.se/"/>
-
-  <!-- Preload första hero-bilden (hög prio) -->
-  <link rel="preload" as="image"
-        href="assets/img/20230922%20Protech%20milj%C3%B8bilder%2004.jpg" fetchpriority="high">
-
-  <link rel="stylesheet" href="style.css" />
-
-  <!-- Schema.org -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"LocalBusiness",
-    "name":"Protech Consult AB",
-    "url":"https://protechconsult.se",
-    "telephone":"+46708855579",
-    "email":"Henrik.olof.olsson@protechconsult.se",
-    "areaServed":"SE",
-    "department":[
-      {"@type":"Service","name":"Sprickbesiktning (Syneförrättning)"},
-      {"@type":"Service","name":"Vibrationsmätning"},
-      {"@type":"Service","name":"Bullermätning"},
-      {"@type":"Service","name":"Riskanalys"}
-    ],
-    "address":{"@type":"PostalAddress","addressCountry":"SE"}
-  }
-  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sprickbesiktning – ProTech Consult AB</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header -->
-  <header class="top">
-    <div class="container nav">
-      <a class="brand" href="#">
-        <img src="assets/img/ProTech%20Consult%20AB-Black.png" alt="Protech Consult" width="160" height="38" decoding="async" />
-      </a>
-      <nav class="menu" aria-label="Huvudmeny">
-        <a href="#tjanster">Tjänster</a>
-        <a href="#varfor">Varför Protech</a>
-        <a href="#process">Process</a>
-        <a href="#kontakt">Kontakt</a>
-        <a class="cta" href="tel:+46708855579">Ring 070-88 555 79</a>
-      </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <img src="bild1.jpg" alt="Sprickbesiktning arbete">
+    <div class="hero-text">
+      <h1>Sprickbesiktning</h1>
+      <p>Professionella besiktningar och vibrationsmätningar över hela Sverige</p>
+      <a href="#kontakt" class="cta">Kontakta oss</a>
     </div>
   </header>
 
-  <!-- HERO 1 -->
-  <section class="hero fullbleed">
-    <picture>
-      <img src="assets/img/20230922%20Protech%20milj%C3%B8bilder%2004.jpg"
-           alt="Spräng- och markarbete – Protech på plats"
-           width="2400" height="1350" fetchpriority="high" decoding="async">
-    </picture>
-    <div class="hero__overlay">
-      <div class="hero__content container">
-        <p class="eyebrow">PROTECH CONSULT</p>
-        <h1>Sprickbesiktning, vibrations- & bullermätning</h1>
-        <p class="lede">Snabb leverans, tydlig dokumentation och SMS-larm – enligt svensk standard, i hela Sverige.</p>
-        <div class="actions">
-          <a class="btn primary" href="tel:+46708855579">📞 Ring direkt</a>
-          <a class="btn ghost" href="mailto:Henrik.olof.olsson@protechconsult.se?subject=Offert">✉️ Begär offert</a>
-        </div>
+  <!-- Om oss -->
+  <section class="section">
+    <div class="container">
+      <h2>Varför välja oss</h2>
+      <p>Vi på <strong>ProTech Consult AB</strong> erbjuder högkvalitativa sprickbesiktningar, vibrations- och bullermätningar för bygg- och infrastrukturprojekt.</p>
+      <div class="grid">
+        <img src="bild2.jpg" alt="Arbetare i fält">
+        <img src="bild3.jpg" alt="Installationsarbete">
+        <img src="bild4.jpeg" alt="Mätutrustning">
       </div>
     </div>
   </section>
 
   <!-- Tjänster -->
-  <section id="tjanster" class="section container">
-    <h2>Våra tjänster</h2>
-    <div class="grid cards">
-      <article class="card">
-        <img src="assets/img/20230922%20Protech%20milj%C3%B8bilder%2041.jpeg" alt="Syneförrättning – sprickbesiktning" loading="lazy" decoding="async" width="1200" height="800">
-        <h3>Sprickbesiktning (Syneförrättning)</h3>
-        <p>Före och efter sprängning/markarbeten. Protokoll med foton enligt svensk standard. Kan utföras med sotare vid behov.</p>
-      </article>
-
-      <article class="card">
-        <img src="assets/img/20231109%20Protech9267.jpg" alt="Montering av vibrationsmätare" loading="lazy" decoding="async" width="1200" height="800">
-        <h3>Vibrationsmätning</h3>
-        <p>Vertikal & triax, trådbundna mätare. SMS-funktion vid larm. Priser per mätare och dygn.</p>
-      </article>
-
-      <article class="card">
-        <img src="assets/img/20230922%20Protech%20milj%C3%B8bilder%2040.jpg" alt="Vibration-/bullermätare monterad på fasad" loading="lazy" decoding="async" width="1200" height="800">
-        <h3>Bullermätning</h3>
-        <p>Kontinuerlig mätning dag/kväll/natt med gränsvärden, loggning och rapportering.</p>
-      </article>
-
-      <article class="card">
-        <img src="assets/img/20230623%20ProTech52919.jpg" alt="Utrustning och sensorer" loading="lazy" decoding="async" width="1200" height="800">
-        <h3>Riskanalys</h3>
-        <p>Riskanalyser framtagna av ingenjörer – anpassat för sprängning och andra markarbeten.</p>
-      </article>
-    </div>
-  </section>
-
-  <!-- Fullbleed bild 2 -->
-  <section class="fullbleed spacer" aria-hidden="true">
-    <picture>
-      <img src="assets/img/20230922%20Protech%20milj%C3%B8bilder%2014.jpg"
-           alt="" loading="lazy" decoding="async" width="2400" height="1350">
-    </picture>
-  </section>
-
-  <!-- Varför Protech -->
-  <section id="varfor" class="section alt">
-    <div class="container narrow">
-      <h2>Varför välja Protech?</h2>
-      <ul class="bullets">
-        <li>Enligt svensk standard – dokumentation och tydliga utlåtanden</li>
-        <li>Erfarna besiktningsmän/ingenjörer – snabb leverans</li>
-        <li>SMS-larm och realtidsuppföljning vid mätning</li>
-        <li>Vi täcker hela Sverige och kan ta akuta ärenden</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Fullbleed bild 3 -->
-  <section class="fullbleed spacer" aria-hidden="true">
-    <picture>
-      <img src="assets/img/20230922%20Protech%20milj%C3%B8bilder%2004.jpg"
-           alt="" loading="lazy" decoding="async" width="2400" height="1350">
-    </picture>
-  </section>
-
-  <!-- Process -->
-  <section id="process" class="section container">
-    <h2>Så går det till</h2>
-    <ol class="steps">
-      <li><strong>Bokning & planering</strong> – vi bekräftar tid, område och upplägg.</li>
-      <li><strong>Fältbesiktning / mätning</strong> – före start, med möjlighet till efterbesiktning.</li>
-      <li><strong>Rapport</strong> – protokoll, foton och åtgärdsförslag. Klart och spårbart.</li>
-    </ol>
-  </section>
-
-  <!-- Team / porträtt -->
   <section class="section alt">
-    <div class="container team">
-      <div class="team__card">
-        <img src="assets/img/20230922%20Protech%20Portrett%2001.jpg" alt="Henrik – Protech Consult" loading="lazy" decoding="async" width="768" height="768">
-        <div>
-          <h3>Henrik, Protech Consult</h3>
-          <p>Din kontakt för sprickbesiktning, vibrations- och bullermätning. Snabba besked, raka besked.</p>
-          <a class="btn primary" href="tel:+46708855579">📞 Ring 070-88 555 79</a>
+    <div class="container">
+      <h2>Våra tjänster</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="bild5.jpg" alt="Inspektör arbetar">
+          <h3>Sprickbesiktning</h3>
+          <p>Dokumentation av befintliga sprickor innan byggstart.</p>
+        </div>
+        <div class="card">
+          <img src="bild6.jpg" alt="Fältmätning">
+          <h3>Vibrationsmätning</h3>
+          <p>Kontinuerlig övervakning av vibrationer under projektets gång.</p>
+        </div>
+        <div class="card">
+          <img src="bild7.jpg" alt="Mätutrustning">
+          <h3>Bullermätning</h3>
+          <p>Professionella ljudmätningar före och efter byggåtgärder.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Kontakt -->
-  <section id="kontakt" class="section container">
-    <h2>Kontakta oss</h2>
-    <div class="contact">
-      <div>
-        <p><strong>Henrik</strong><br>
-        Tel: <a href="tel:+46708855579">070-88 555 79</a><br>
-        E-post: <a href="mailto:Henrik.olof.olsson@protechconsult.se">Henrik.olof.olsson@protechconsult.se</a></p>
+  <!-- Galleri -->
+  <section class="section">
+    <div class="container">
+      <h2>Galleri</h2>
+      <div class="gallery">
+        <img src="bild8.jpg" alt="Porträtt">
+        <img src="bild9 .png" alt="ProTech Logotyp">
+        <img src="bild10.jpg" alt="Stockholm kvällsbild">
       </div>
-      <a class="btn primary" href="tel:+46708855579">📞 Ring nu</a>
     </div>
   </section>
 
-  <footer class="footer">
-    <div class="container small">© Protech Consult AB – Sprickbesiktning, vibrations- & bullermätning</div>
+  <!-- Kontakt -->
+  <section id="kontakt" class="section alt">
+    <div class="container">
+      <h2>Kontakta oss</h2>
+      <p>Har du frågor eller behöver offert? Kontakta oss idag.</p>
+      <p><strong>E-post:</strong> <a href="mailto:info@protechconsult.se">info@protechconsult.se</a></p>
+      <p><strong>Telefon:</strong> 070-885 55 79</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 ProTech Consult AB – Sprickbesiktning</p>
   </footer>
 
-  <!-- Sticky call på mobil -->
-  <div class="sticky-call"><a href="tel:+46708855579">📞 Ring 070-88 555 79</a></div>
 </body>
 </html>
