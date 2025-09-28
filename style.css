@@ -107,3 +107,68 @@ body{
 /* FOOTER */
 .site-footer{background:#090e1a;border-top:1px solid rgba(255,255,255,.06)}
 .footer-inner{padding:16px 0;text-align:center;color:#bacee9;font-size:14px}
+
+/* ===== UNDERSIDOR – SAMMA STIL SOM STARTSIDAN ===== */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.hero {
+  background: var(--hero) center/cover no-repeat;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+}
+
+.hero-inner {
+  background: rgba(0,0,0,0.4); /* ger läsbar text på bild */
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.hero-inner h1,
+.hero-inner p {
+  margin: 0 0 1rem;
+  color: #fff;
+}
+
+.content.container {
+  text-align: left;
+  background: #fff;
+}
+
+ul.check {
+  list-style: none;
+  padding: 0;
+}
+
+ul.check li::before {
+  content: "✔ ";
+  color: #00843d;
+}
+
+.cta {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.cta .btn {
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  background: #00843d;
+  color: #fff;
+  font-weight: 600;
+}
+
+.cta .btn.btn-primary {
+  background: #005f2f;
+}
