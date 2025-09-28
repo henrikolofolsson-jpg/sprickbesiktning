@@ -4,18 +4,16 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Protech Consult – Sprickbesiktning, Vibrations- & Bullermätning</title>
-  <meta name="description" content="Protech Consult levererar sprickbesiktning (syneförrättning), vibrationsmätning och bullermätning – snabbt, enligt svensk standard. Ring 070-88 555 79." />
+  <meta name="description" content="Protech Consult utför sprickbesiktning (syneförrättning), vibrationsmätning och bullermätning – snabbt, enligt svensk standard. Ring 070-88 555 79." />
   <link rel="canonical" href="https://protechconsult.se/"/>
 
-  <!-- Preload hero (AVIF+WebP+JPEG) med srcset för olika skärmar -->
+  <!-- Preload första hero-bilden (hög prio) -->
   <link rel="preload" as="image"
-        imagesrcset="assets/img/hero-1280.avif 1280w, assets/img/hero-1920.avif 1920w, assets/img/hero-2400.avif 2400w"
-        imagesizes="(max-width: 900px) 100vw, 100vw"
-        href="assets/img/hero-1920.avif" fetchpriority="high">
+        href="assets/img/20230922%20Protech%20milj%C3%B8bilder%2004.jpg" fetchpriority="high">
 
   <link rel="stylesheet" href="style.css" />
 
-  <!-- Strukturdata (LocalBusiness + Service) -->
+  <!-- Schema.org -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -39,35 +37,26 @@
   <!-- Header -->
   <header class="top">
     <div class="container nav">
-      <a class="brand" href="/">
-        <!-- byt till din logotyp -->
-        <img src="assets/img/logo.svg" alt="Protech Consult" width="140" height="32" decoding="async" />
+      <a class="brand" href="#">
+        <img src="assets/img/ProTech%20Consult%20AB-Black.png" alt="Protech Consult" width="160" height="38" decoding="async" />
       </a>
       <nav class="menu" aria-label="Huvudmeny">
         <a href="#tjanster">Tjänster</a>
         <a href="#varfor">Varför Protech</a>
-        <a href="#referenser">Referenser</a>
+        <a href="#process">Process</a>
+        <a href="#kontakt">Kontakt</a>
         <a class="cta" href="tel:+46708855579">Ring 070-88 555 79</a>
       </nav>
     </div>
   </header>
 
-  <!-- HERO: skärm-bred, pixelperfekt, CLS-säkrad -->
-  <section class="hero fullbleed" aria-label="Hero">
+  <!-- HERO 1 -->
+  <section class="hero fullbleed">
     <picture>
-      <!-- AVIF först -->
-      <source type="image/avif"
-        srcset="assets/img/hero-1280.avif 1280w, assets/img/hero-1920.avif 1920w, assets/img/hero-2400.avif 2400w"
-        sizes="100vw">
-      <!-- WebP -->
-      <source type="image/webp"
-        srcset="assets/img/hero-1280.webp 1280w, assets/img/hero-1920.webp 1920w, assets/img/hero-2400.webp 2400w"
-        sizes="100vw">
-      <!-- JPEG fallback -->
-      <img src="assets/img/hero-1920.jpg" alt="Arbetsplats där besiktning pågår"
+      <img src="assets/img/20230922%20Protech%20milj%C3%B8bilder%2004.jpg"
+           alt="Spräng- och markarbete – Protech på plats"
            width="2400" height="1350" fetchpriority="high" decoding="async">
     </picture>
-
     <div class="hero__overlay">
       <div class="hero__content container">
         <p class="eyebrow">PROTECH CONSULT</p>
@@ -75,7 +64,7 @@
         <p class="lede">Snabb leverans, tydlig dokumentation och SMS-larm – enligt svensk standard, i hela Sverige.</p>
         <div class="actions">
           <a class="btn primary" href="tel:+46708855579">📞 Ring direkt</a>
-          <a class="btn ghost" href="mailto:Henrik.olof.olsson@protechconsult.se?subject=Förfrågan">✉️ Begär offert</a>
+          <a class="btn ghost" href="mailto:Henrik.olof.olsson@protechconsult.se?subject=Offert">✉️ Begär offert</a>
         </div>
       </div>
     </div>
@@ -86,26 +75,37 @@
     <h2>Våra tjänster</h2>
     <div class="grid cards">
       <article class="card">
-        <img src="assets/img/spricka-800.webp" alt="" width="800" height="600" loading="lazy" decoding="async">
-        <h3>Sprickbesiktning</h3>
-        <p>Syneförrättning före/efter sprängning och markarbeten. Protokoll & foton enligt svensk standard.</p>
+        <img src="assets/img/20230922%20Protech%20milj%C3%B8bilder%2041.jpeg" alt="Syneförrättning – sprickbesiktning" loading="lazy" decoding="async" width="1200" height="800">
+        <h3>Sprickbesiktning (Syneförrättning)</h3>
+        <p>Före och efter sprängning/markarbeten. Protokoll med foton enligt svensk standard. Kan utföras med sotare vid behov.</p>
       </article>
+
       <article class="card">
-        <img src="assets/img/vibration-800.webp" alt="" width="800" height="600" loading="lazy" decoding="async">
+        <img src="assets/img/20231109%20Protech9267.jpg" alt="Montering av vibrationsmätare" loading="lazy" decoding="async" width="1200" height="800">
         <h3>Vibrationsmätning</h3>
         <p>Vertikal & triax, trådbundna mätare. SMS-funktion vid larm. Priser per mätare och dygn.</p>
       </article>
+
       <article class="card">
-        <img src="assets/img/buller-800.webp" alt="" width="800" height="600" loading="lazy" decoding="async">
+        <img src="assets/img/20230922%20Protech%20milj%C3%B8bilder%2040.jpg" alt="Vibration-/bullermätare monterad på fasad" loading="lazy" decoding="async" width="1200" height="800">
         <h3>Bullermätning</h3>
-        <p>Kontinuerlig mätning dag/kväll/natt med rapportering och gränsvärdeshantering.</p>
+        <p>Kontinuerlig mätning dag/kväll/natt med gränsvärden, loggning och rapportering.</p>
       </article>
+
       <article class="card">
-        <img src="assets/img/risk-800.webp" alt="" width="800" height="600" loading="lazy" decoding="async">
+        <img src="assets/img/20230623%20ProTech52919.jpg" alt="Utrustning och sensorer" loading="lazy" decoding="async" width="1200" height="800">
         <h3>Riskanalys</h3>
         <p>Riskanalyser framtagna av ingenjörer – anpassat för sprängning och andra markarbeten.</p>
       </article>
     </div>
+  </section>
+
+  <!-- Fullbleed bild 2 -->
+  <section class="fullbleed spacer" aria-hidden="true">
+    <picture>
+      <img src="assets/img/20230922%20Protech%20milj%C3%B8bilder%2014.jpg"
+           alt="" loading="lazy" decoding="async" width="2400" height="1350">
+    </picture>
   </section>
 
   <!-- Varför Protech -->
@@ -121,39 +121,40 @@
     </div>
   </section>
 
-  <!-- Fullbleed bild nr 2 (lazy) -->
+  <!-- Fullbleed bild 3 -->
   <section class="fullbleed spacer" aria-hidden="true">
     <picture>
-      <source type="image/avif" srcset="assets/img/field-1920.avif 1920w, assets/img/field-2400.avif 2400w" sizes="100vw">
-      <source type="image/webp" srcset="assets/img/field-1920.webp 1920w, assets/img/field-2400.webp 2400w" sizes="100vw">
-      <img src="assets/img/field-1920.jpg" alt="" width="2400" height="1350" loading="lazy" decoding="async">
+      <img src="assets/img/20230922%20Protech%20milj%C3%B8bilder%2004.jpg"
+           alt="" loading="lazy" decoding="async" width="2400" height="1350">
     </picture>
   </section>
 
   <!-- Process -->
-  <section class="section container">
+  <section id="process" class="section container">
     <h2>Så går det till</h2>
     <ol class="steps">
-      <li><strong>Bokning & planering</strong> – vi bekräftar tid och upplägg.</li>
-      <li><strong>Fältbesiktning</strong> – före arbetet startar, vid behov även efterbesiktning.</li>
-      <li><strong>Rapport</strong> – protokoll och foton, samt åtgärdsförslag.</li>
+      <li><strong>Bokning & planering</strong> – vi bekräftar tid, område och upplägg.</li>
+      <li><strong>Fältbesiktning / mätning</strong> – före start, med möjlighet till efterbesiktning.</li>
+      <li><strong>Rapport</strong> – protokoll, foton och åtgärdsförslag. Klart och spårbart.</li>
     </ol>
   </section>
 
-  <!-- Referenser (plats för 3–6 loggor eller kort) -->
-  <section id="referenser" class="section alt">
-    <div class="container">
-      <h2>Uppdrag & referenser</h2>
-      <div class="grid logos">
-        <img src="assets/img/ref-1.svg" alt="Referens 1" width="140" height="60" loading="lazy" decoding="async">
-        <img src="assets/img/ref-2.svg" alt="Referens 2" width="140" height="60" loading="lazy" decoding="async">
-        <img src="assets/img/ref-3.svg" alt="Referens 3" width="140" height="60" loading="lazy" decoding="async">
+  <!-- Team / porträtt -->
+  <section class="section alt">
+    <div class="container team">
+      <div class="team__card">
+        <img src="assets/img/20230922%20Protech%20Portrett%2001.jpg" alt="Henrik – Protech Consult" loading="lazy" decoding="async" width="768" height="768">
+        <div>
+          <h3>Henrik, Protech Consult</h3>
+          <p>Din kontakt för sprickbesiktning, vibrations- och bullermätning. Snabba besked, raka besked.</p>
+          <a class="btn primary" href="tel:+46708855579">📞 Ring 070-88 555 79</a>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Kontakt -->
-  <section class="section container">
+  <section id="kontakt" class="section container">
     <h2>Kontakta oss</h2>
     <div class="contact">
       <div>
