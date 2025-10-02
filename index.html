@@ -145,20 +145,26 @@
       </div>
 
       <!-- Formulär -->
-      <form class="form" action="https://formsubmit.co/henrik.olof.olsson@protechconsult.se" method="POST">
-        <input type="hidden" name="_subject" value="Förfrågan via vibrationskontroll.se">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="./#tack">
-        <label>Namn</label>
-        <input required name="namn" placeholder="Ditt namn">
-        <label>E-post</label>
-        <input required type="email" name="email" placeholder="namn@företag.se">
-        <label>Telefon</label>
-        <input name="telefon" placeholder="070-xxx xx xx">
-        <label>Meddelande</label>
-        <textarea required name="meddelande" rows="5" placeholder="Kort om plats, antal mätare & tidsperiod..."></textarea>
-        <button class="btn btn-primary" type="submit">Skicka förfrågan</button>
-      </form>
+    <form action="https://formsubmit.co/henrik.olof.olsson@protechconsult.se" method="POST">
+  <!-- Avsändare -->
+  <input type="text" name="namn" placeholder="Ditt namn" required>
+  <input type="email" name="email" placeholder="Din e-post" required>
+  <input type="tel" name="telefon" placeholder="Telefon">
+
+  <!-- Meddelande -->
+  <textarea name="meddelande" placeholder="Berätta kort vad du behöver hjälp med" required></textarea>
+
+  <!-- Formsubmit – inställningar -->
+  <input type="hidden" name="_subject" value="Förfrågan via sprickbesiktning.se">
+  <!-- vart ska vi tack-omdirigera? (måste vara absolut URL) -->
+  <input type="hidden" name="_next" value="https://sprickbesiktning.se/#tack">
+  <!-- stäng captchan om du vill -->
+  <input type="hidden" name="_captcha" value="false">
+  <!-- enkel botfälla -->
+  <input type="text" name="_honey" style="display:none">
+
+  <button type="submit" class="btn btn-primary">Skicka</button>
+</form>
     </div>
   </div>
 </section>
