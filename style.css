@@ -98,3 +98,69 @@ ul.check.compact li{margin:4px 0}
 .site-footer{background:#0a0f1f;border-top:1px solid var(--stroke)}
 .footer-inner{padding:16px 0;text-align:center;color:#b8c6e1;font-size:14px}
 .footer-logo{height:28px;opacity:.9;margin:0 auto 8px}
+
+/* ==== PATCH: snyggt kontaktformulär utan att röra övrig design ==== */
+#kontakt form{
+  background: var(--card);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: var(--shadow);
+}
+
+#kontakt form input,
+#kontakt form textarea{
+  width: 100%;
+  background: #0b1328;
+  color: var(--text);
+  border: 1px solid rgba(255,255,255,.14);
+  border-radius: 12px;
+  padding: 14px 16px;
+  font-size: 16px;
+  line-height: 1.4;
+  margin: 0 0 12px;
+  outline: none;
+  transition: border .15s ease, box-shadow .15s ease, background .2s ease;
+}
+
+#kontakt form input::placeholder,
+#kontakt form textarea::placeholder{
+  color: #9fb1d6;
+  opacity: .95;
+}
+
+#kontakt form input:focus,
+#kontakt form textarea:focus{
+  border-color: rgba(8,197,255,.6);
+  box-shadow: 0 0 0 3px rgba(8,197,255,.18);
+  background: #0d1731;
+}
+
+#kontakt form textarea{
+  min-height: 140px;
+  resize: vertical;
+}
+
+#kontakt form button[type="submit"]{
+  display: inline-block;
+  width: 100%;
+  min-height: 50px;
+  padding: 12px 18px;
+  border-radius: 12px;
+  font-weight: 800;
+  font-size: 16px;
+  border: 0;
+  cursor: pointer;
+  background: linear-gradient(135deg,var(--brand),#4bd5ff);
+  color: #011a2b;
+  box-shadow: var(--shadow);
+  transition: filter .2s ease, transform .06s ease;
+}
+#kontakt form button[type="submit"]:hover{ filter: brightness(1.06) }
+#kontakt form button[type="submit"]:active{ transform: translateY(1px) }
+
+/* Mobil: lite större text/padding för lättare ifyllnad */
+@media (max-width: 600px){
+  #kontakt form input,
+  #kontakt form textarea{ font-size:17px; padding: 15px 16px }
+}
